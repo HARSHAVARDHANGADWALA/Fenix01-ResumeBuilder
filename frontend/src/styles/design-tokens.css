@@ -1,0 +1,161 @@
+/* ======================================================
+   FENIX DESIGN TOKENS
+   Linear / Vercel Ultra-Premium Theme System
+   ====================================================== */
+
+:root,
+[data-theme="light"] {
+  /* Surfaces */
+  --bg-page:           #f7f8fa;
+  --bg-page-mesh:      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(99, 102, 241, 0.12), transparent);
+  --bg-card:           #ffffff;
+  --bg-card-hover:     #fcfdfe;
+  --bg-card-subtle:    #f3f4f6;
+  --bg-sidebar:        #ffffff;
+  --bg-topbar:         rgba(255, 255, 255, 0.85);
+  --bg-input:          #ffffff;
+  --bg-overlay:        rgba(15, 23, 42, 0.45);
+
+  /* Borders */
+  --border:            #e2e6ed;
+  --border-subtle:     #edf0f5;
+  --border-strong:     #cbd5e1;
+  --border-focus:      #6366f1;
+  --border-input:      #d8dde6;
+  --border-card-spec:  rgba(255, 255, 255, 0.9);
+
+  /* Text */
+  --text-primary:      #0f172a;
+  --text-secondary:    #475569;
+  --text-muted:        #94a3b8;
+  --text-inverse:      #ffffff;
+  --text-link:         #4f46e5;
+
+  /* Accent (Indigo / Violet) */
+  --accent:             #6366f1;
+  --accent-hover:       #4f46e5;
+  --accent-light:       #eef2ff;
+  --accent-light-hover: #e0e7ff;
+  --accent-border:      #c7d2fe;
+  --accent-text:        #4338ca;
+  --accent-glow:        0 0 24px -4px rgba(99, 102, 241, 0.35);
+
+  /* Semantic */
+  --success:        #10b981;
+  --success-light:  #ecfdf5;
+  --success-text:   #065f46;
+  --success-border: #a7f3d0;
+  --warning:        #f59e0b;
+  --warning-light:  #fffbeb;
+  --warning-text:   #92400e;
+  --warning-border: #fde68a;
+  --error:          #ef4444;
+  --error-light:    #fef2f2;
+  --error-text:     #991b1b;
+  --error-border:   #fecaca;
+  --info:           #0ea5e9;
+  --info-light:     #f0f9ff;
+  --info-text:      #0369a1;
+
+  /* Sidebar */
+  --sidebar-text:        #334155;
+  --sidebar-muted:       #64748b;
+  --sidebar-active-bg:   #eef2ff;
+  --sidebar-active-text: #4338ca;
+  --sidebar-hover-bg:    #f1f5f9;
+  --sidebar-group-label: #94a3b8;
+
+  /* Shadows */
+  --shadow-xs:    0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  --shadow-sm:    0 1px 3px 0 rgba(0, 0, 0, 0.06), 0 1px 2px -1px rgba(0, 0, 0, 0.04);
+  --shadow-md:    0 4px 12px -2px rgba(0, 0, 0, 0.06), 0 2px 6px -2px rgba(0, 0, 0, 0.04);
+  --shadow-lg:    0 12px 24px -4px rgba(0, 0, 0, 0.08), 0 4px 8px -2px rgba(0, 0, 0, 0.03);
+  --shadow-xl:    0 24px 36px -8px rgba(0, 0, 0, 0.10);
+  --shadow-focus: 0 0 0 3px rgba(99, 102, 241, 0.22);
+
+  /* Radii & Typography */
+  --radius-xs:   4px;
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   14px;
+  --radius-xl:   18px;
+  --radius-full: 9999px;
+
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, monospace;
+
+  --transition-fast: 120ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition:      180ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-md:   240ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-theme="dark"] {
+  /* Cosmic Dark Surfaces (Linear / Vercel aesthetic) */
+  --bg-page:           #08090c;
+  --bg-page-mesh:      radial-gradient(ellipse 90% 50% at 50% -20%, rgba(99, 102, 241, 0.16), transparent 70%),
+                       radial-gradient(ellipse 60% 40% at 85% 15%, rgba(139, 92, 246, 0.08), transparent 60%);
+  --bg-card:           #101217;
+  --bg-card-hover:     #14171e;
+  --bg-card-subtle:    #161922;
+  --bg-sidebar:        #0c0d12;
+  --bg-topbar:         rgba(12, 13, 18, 0.82);
+  --bg-input:          #12141a;
+  --bg-overlay:        rgba(0, 0, 0, 0.72);
+
+  /* Specular Highlight Borders */
+  --border:            #1f232d;
+  --border-subtle:     #171922;
+  --border-strong:     #2f3544;
+  --border-focus:      #818cf8;
+  --border-input:      #232835;
+  --border-card-spec:  rgba(255, 255, 255, 0.08);
+
+  /* Crisp Typography */
+  --text-primary:      #f1f5f9;
+  --text-secondary:    #94a3b8;
+  --text-muted:        #64748b;
+  --text-inverse:      #08090c;
+  --text-link:         #a5b4fc;
+
+  /* Accent (Electric Violet/Indigo) */
+  --accent:             #818cf8;
+  --accent-hover:       #6366f1;
+  --accent-light:       rgba(99, 102, 241, 0.12);
+  --accent-light-hover: rgba(99, 102, 241, 0.20);
+  --accent-border:      rgba(129, 140, 248, 0.35);
+  --accent-text:        #c7d2fe;
+  --accent-glow:        0 0 30px -4px rgba(129, 140, 248, 0.45);
+
+  /* Semantic */
+  --success:        #34d399;
+  --success-light:  rgba(16, 185, 129, 0.12);
+  --success-text:   #6ee7b7;
+  --success-border: rgba(52, 211, 153, 0.3);
+  --warning:        #fbbf24;
+  --warning-light:  rgba(245, 158, 11, 0.12);
+  --warning-text:   #fde68a;
+  --warning-border: rgba(251, 191, 36, 0.3);
+  --error:          #f87171;
+  --error-light:    rgba(239, 68, 68, 0.14);
+  --error-text:     #fca5a5;
+  --error-border:   rgba(248, 113, 113, 0.3);
+  --info:           #38bdf8;
+  --info-light:     rgba(56, 189, 248, 0.12);
+  --info-text:      #7dd3fc;
+
+  /* Sidebar */
+  --sidebar-text:        #cbd5e1;
+  --sidebar-muted:       #64748b;
+  --sidebar-active-bg:   rgba(99, 102, 241, 0.15);
+  --sidebar-active-text: #e0e7ff;
+  --sidebar-hover-bg:    #151720;
+  --sidebar-group-label: #475569;
+
+  /* Shadows with ambient depth */
+  --shadow-xs:    0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  --shadow-sm:    0 2px 6px -1px rgba(0, 0, 0, 0.5);
+  --shadow-md:    0 6px 18px -3px rgba(0, 0, 0, 0.6);
+  --shadow-lg:    0 14px 28px -6px rgba(0, 0, 0, 0.7);
+  --shadow-xl:    0 24px 44px -10px rgba(0, 0, 0, 0.85);
+  --shadow-focus: 0 0 0 3px rgba(129, 140, 248, 0.32);
+}
